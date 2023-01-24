@@ -67,7 +67,7 @@ deposit_card = KeyboardButton('🏞Карты МИР')
 oren_card = KeyboardButton('🌇Карта Оренбуржца')
 Other_Menu_card = ReplyKeyboardMarkup(resize_keyboard = True).add(deposit_card, oren_card, btnMain)
 
-#other_deposit_card_1
+#other_deposit_card_1   
 
 classic_deposit = KeyboardButton('Классическая карта МИР')
 emty_1 = KeyboardButton('')
