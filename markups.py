@@ -5,9 +5,9 @@ btnMain = KeyboardButton('🗃Вернуться в главное меню')
 
 btnkredit = KeyboardButton('🚩Кредиты')
 btndeposit = KeyboardButton('🛡Вклады')
-bank_card = KeyboardButton('💳Банковские карты')
+bank_card = KeyboardButton('💳Карты')
 #curs_v = KeyboardButton('💸Курсы валют в офисах г.Оренбург')
-consultation_mark = KeyboardButton('☎️Консультация с специалистом')
+consultation_mark = KeyboardButton('☎️Офисы и контакты')
 mainMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnkredit, btndeposit, bank_card, consultation_mark)
 
 #other menu
@@ -50,18 +50,32 @@ OtherMenu_mort = ReplyKeyboardMarkup(resize_keyboard = True).add(buy_app, buy_re
 #other_deposit
 
 depositMenu = KeyboardButton('Вернуться в меню "🛡Вклады"' )
+# меню вклада
+depositOn = KeyboardButton('☕️Вклады в офисах Банка')
+depositOff = KeyboardButton('📲Вклады онлайн')
+moneybox = KeyboardButton('🗄 Счета')
+OffOnMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(depositOn, depositOff, moneybox, btnMain)
 
+# оффлайн вклады
 right_choice = KeyboardButton('🤝Правильный выбор')
-emty_1 = KeyboardButton('')
-right_choice_online = KeyboardButton('📲Правильный выбор онлайн')
-comfort_deposit = KeyboardButton('💺Комфортный')
+newhoriz_deposit = KeyboardButton('🌄Новый горизонт')
 pension_deposit = KeyboardButton('👨Пенсионный')
-online_deposit = KeyboardButton('📲Онл@йн')
-OtherMenu_deposit = ReplyKeyboardMarkup(resize_keyboard = True).add(right_choice, emty_1, right_choice_online, comfort_deposit, pension_deposit, online_deposit, btnMain)
+olimp = KeyboardButton('⛰Олимп')
+Offline_deposit = ReplyKeyboardMarkup(resize_keyboard = True).add(right_choice, newhoriz_deposit, pension_deposit, olimp, depositMenu, btnMain)
+
+# онлайн вклады
+right_choice_online = KeyboardButton('📲Правильный выбор онлайн')
+online_deposit = KeyboardButton('🚀Онл@йн')
+Online_deposit = ReplyKeyboardMarkup(resize_keyboard = True).add(right_choice_online, online_deposit, depositMenu, btnMain)
+
+# счета накопительные
+
+money_one = KeyboardButton('🗄 Накопительный счёт')
+money_box_menu = ReplyKeyboardMarkup(resize_keyboard = True).add(money_one, emty_1, depositMenu, btnMain)
+money_two = KeyboardButton('')
 
 #other_deposit_card
-
-cardMenu_back = KeyboardButton('Вернуться в меню 💳Банковские карты')
+cardMenu_back = KeyboardButton('Вернуться в меню 💳Карты')
 
 deposit_card = KeyboardButton('🏞Карты МИР')
 oren_card = KeyboardButton('🌇Карта Оренбуржца')
@@ -71,13 +85,20 @@ Other_Menu_card = ReplyKeyboardMarkup(resize_keyboard = True).add(deposit_card, 
 
 classic_deposit = KeyboardButton('Классическая карта МИР')
 emty_1 = KeyboardButton('')
-premium_deposit = KeyboardButton('Премиальная карта МИР')
-OtherMenu_cardmir = ReplyKeyboardMarkup(resize_keyboard = True).add(classic_deposit,emty_1, premium_deposit, cardMenu_back, btnMain)
+OtherMenu_cardmir = ReplyKeyboardMarkup(resize_keyboard = True).add(classic_deposit, emty_1, cardMenu_back, btnMain)
+
+# Офисы
+contact = KeyboardButton('☎️Вернуться в меню "Офисы и контакты"')
+orenoffice_time = KeyboardButton('🌇Офисы в г.Оренбурге')
+regionoffice_time = KeyboardButton('🌄Офисы в Оренбургской области')
+
+contact_menu = ReplyKeyboardMarkup(resize_keyboard = True).add(orenoffice_time, emty_1, regionoffice_time, btnMain)
+
 
 #other_kurs
 
-curs_dollar = KeyboardButton('$ Покупка/Продажка')
-curs_euro = KeyboardButton('€ Покупка/Продажа')
-curs_tenge = KeyboardButton('Тенге Покупка/Продажа')
+# curs_dollar = KeyboardButton('$ Покупка/Продажка')
+# curs_euro = KeyboardButton('€ Покупка/Продажа')
+# curs_tenge = KeyboardButton('Тенге Покупка/Продажа')
 
-OtherMenu_curs = ReplyKeyboardMarkup(resize_keyboard = True).add(curs_dollar, curs_euro, curs_tenge, btnMain)
+# OtherMenu_curs = ReplyKeyboardMarkup(resize_keyboard = True).add(curs_dollar, curs_euro, curs_tenge, btnMain)
