@@ -8,7 +8,8 @@ btndeposit = KeyboardButton('🛡Вклады')
 bank_card = KeyboardButton('💳Карты')
 #curs_v = KeyboardButton('💸Курсы валют в офисах г.Оренбург')
 consultation_mark = KeyboardButton('☎️Офисы и контакты')
-mainMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnkredit, btndeposit, bank_card, consultation_mark)
+news_mark = KeyboardButton('🗞Новости')
+mainMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnkredit, btndeposit, bank_card, news_mark, consultation_mark)
 
 #other menu
 
@@ -61,7 +62,7 @@ right_choice = KeyboardButton('🤝Правильный выбор')
 newhoriz_deposit = KeyboardButton('🌄Новый горизонт')
 pension_deposit = KeyboardButton('👨Пенсионный')
 olimp = KeyboardButton('⛰Олимп')
-Offline_deposit = ReplyKeyboardMarkup(resize_keyboard = True).add(right_choice, newhoriz_deposit, pension_deposit, olimp, depositMenu, btnMain)
+Offline_deposit = ReplyKeyboardMarkup(resize_keyboard = True).add(right_choice, newhoriz_deposit, pension_deposit, olimp, depositMenu, emty_1,  consultation_mark, btnMain)
 
 # онлайн вклады
 right_choice_online = KeyboardButton('📲Правильный выбор онлайн')
