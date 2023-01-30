@@ -3,7 +3,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 btnMain = KeyboardButton('🗃Вернуться в главное меню')
 # main menu
 
-btnkredit = KeyboardButton('🚩Кредиты')
+btnkredit = KeyboardButton('🚀Кредиты')
 btndeposit = KeyboardButton('🛡Вклады')
 bank_card = KeyboardButton('💳Карты')
 emty_1 = KeyboardButton('')
@@ -15,7 +15,7 @@ mainMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnkredit, btndeposit
 
 #other menu
 
-loanMenu = KeyboardButton('Вернуться в меню "🚩Кредиты"')
+loanMenu = KeyboardButton('Вернуться в меню "🚀Кредиты"')
 
 btnconsumercredit = KeyboardButton('💎Потребительские кредиты')
 emty_1 = KeyboardButton('')
