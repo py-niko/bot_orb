@@ -6,11 +6,12 @@ btnMain = KeyboardButton('🗃Вернуться в главное меню')
 btnkredit = KeyboardButton('🚩Кредиты')
 btndeposit = KeyboardButton('🛡Вклады')
 bank_card = KeyboardButton('💳Карты')
+emty_1 = KeyboardButton('')
 school_mark = KeyboardButton('🥣Школьное питание')
 #curs_v = KeyboardButton('💸Курсы валют в офисах г.Оренбург')
 consultation_mark = KeyboardButton('☎️Офисы и контакты')
 news_mark = KeyboardButton('🗞Новости')
-mainMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnkredit, btndeposit, bank_card, school_mark, news_mark, consultation_mark)
+mainMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnkredit, btndeposit, bank_card, school_mark, emty_1 , news_mark, consultation_mark)
 
 #other menu
 
