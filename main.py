@@ -4,7 +4,7 @@ import markups as nav
 
 # '5068390376:AAG9AsljUmaSPJY9MQKowODilmZiVYfTUTY'
 #TOKEN = '5090944343:AAHgzeqLCwyQhhfD_j1Hh9Xv0PSBZ09eKUg' original
-TOKEN = '5068390376:AAG9AsljUmaSPJY9MQKowODilmZiVYfTUTY'
+TOKEN = '5090944343:AAHgzeqLCwyQhhfD_j1Hh9Xv0PSBZ09eKUg'
 
 bot=Bot(token=TOKEN)
 dp = Dispatcher(bot)
