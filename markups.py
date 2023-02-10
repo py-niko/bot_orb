@@ -79,7 +79,7 @@ money_box_menu = ReplyKeyboardMarkup(resize_keyboard = True).add(money_one, emty
 money_two = KeyboardButton('')
 
 #other_deposit_card
-cardMenu_back = KeyboardButton('Вернуться в меню 💳Карты')
+cardMenu_back = KeyboardButton('Вернуться в меню "💳Карты"')
 
 deposit_card = KeyboardButton('🏞Карты МИР')
 oren_card = KeyboardButton('🌇Карта Оренбуржца')
